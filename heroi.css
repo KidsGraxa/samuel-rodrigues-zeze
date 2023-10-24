@@ -87,9 +87,11 @@ body {
 .third-slide {
     width: 100%;
 }
+
 .carousel {
     margin-top: -60px;
 }
+
 .carousel-inner {
     z-index: -1;
     height: 100vh;
@@ -98,9 +100,11 @@ body {
 .col-md-4 {
     margin-top: 10%;
 }
+
 .h3 {
     margin-top: 75px;
 }
+
 .form-signin {
     width: 100%;
     max-width: 330px;
@@ -141,9 +145,11 @@ body {
     text-align: center;
     margin-top: 15%;
 }
+
 .gallery_product {
     padding-bottom: 3%;
 }
+
 .form-control {
     resize: none;
 }
@@ -151,9 +157,11 @@ body {
 .text-muted {
     color: #f9f9f9;
 }
-hr{
+
+hr {
     border-color: #999;
 }
+
 .font-weight-light {
     padding-top: 3%;
     padding-bottom: -5%;
@@ -167,6 +175,10 @@ hr{
         z-index: 100;
         display: flex;
         flex: wrap;
+    }
+
+    .marketing {
+        padding-top: -20%;
     }
 
     .py-4 {
@@ -185,9 +197,14 @@ hr{
         font-weight: bold;
         transition: 0.5s;
     }
-    
+
     .carousel {
-        height: 20%; 
+        height: 20%;
+        padding-top: 60px;
+    }
+
+    .first-slide {
+        height: 20%;
     }
 
     .row {
@@ -212,5 +229,14 @@ hr{
 
     i {
         width: 100%;
+    }
+
+    .nav-link {
+        color: #434645;
+    }
+
+    .navbar {
+        background-color: #434645;
+        position: relative;
     }
 }

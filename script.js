@@ -45,3 +45,25 @@ const contactForm = document.getElementById('contact-form');
         const regexCelular = /^\d{10,}$/;
         return regexCelular.test(celular);
     }
+
+//Carrossel
+window.addEventListener('DOMContentLoaded', function() {
+    var carouselItems = document.querySelectorAll('.carousel-item');
+
+    window.addEventListener('resize', function() {
+        var screenWidth = window.innerWidth;
+
+        carouselItems.forEach(function(item) {
+            var img = item.querySelector('img');
+            var className = img.className;
+
+            if (className === 'first-slide') {
+                img.src = screenWidth >= 992 ? 'img/cg1_large.jpg' : 'img/c1.jpg';
+            } else if (className === 'second-slide') {
+                img.src = screenWidth >= 992 ? 'img/cg2_large.jpg' : 'img/c2.jpg';
+            } else if (className === 'third-slide') {
+                img.src = screenWidth >= 992 ? 'img/cg3_large.jpg' : 'img/c3.jpg';
+            }
+        });
+    });
+});
